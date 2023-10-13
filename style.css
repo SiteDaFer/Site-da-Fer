@@ -6,10 +6,49 @@
     color: #d9d9d9;
 }
 
+header{
+    background-color: #22577a;
+}
+
+.navbar{
+    background-color: #22577a;
+}
+
+.navBar{
+    background-color: #22577a;
+}
+
 section{
     padding: 20px 0;
 }
 
 p{
     font-size: 16px;
+}
+
+.navbarAccessed{
+    color: #57cc99;
+}
+
+.accessed{
+    font-weight: bold;
+}
+
+.btn{
+    background-color: #57cc99;
+    border: #57cc99;
+}
+
+.btn:hover{
+    background-color: #6ae8b1;
+    border: #57cc99;
+}
+
+.menu{
+    border-bottom: 0.8px solid black;
+}
+
+.sidebarLink{
+    text-decoration: none;
+    color: black;
 }
