@@ -52,3 +52,15 @@ p{
     text-decoration: none;
     color: black;
 }
+
+.carousel{
+    width: 300px;
+}
+
+.FerCarousel{
+    height: 300px;
+}
+
+.sobreNos{
+    background-color: #22577a;
+}
