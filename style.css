@@ -57,10 +57,28 @@ p{
     width: 300px;
 }
 
-.FerCarousel{
+.FerCarousel-s{
+    height: 300px;
+}
+
+.FerCarousel-md{
+    height: 400px;
+}
+
+.FerCarousel-lg{
+    height: 500px;
+}
+
+.FerCarousel-xl{
     height: 300px;
 }
 
 .sobreNos{
     background-color: #22577a;
+}
+
+.imgConteudo{
+    height: 19.5vw;
+    width: 19.5vw;
+    border-radius: 5px;
 }

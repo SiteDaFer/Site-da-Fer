@@ -9,7 +9,7 @@
     <title>Home</title>
     <style>
         .fer{
-            height: 20vw;
+            height: 23vw;
             background-color: #22577a;
         }
     </style>
@@ -83,18 +83,83 @@
         <div class="container-fluid mt-1 mb-5">
             <div class="container justify-content-center align-items-center">
                 <h2 class="text-center">Sobre o site</h2>
-                <!-- Adicionar um accordion -->
                 <p class="lead">Esse site foi fruto de uma parceria entre alunos do Cotil do curso de Desenvolvimento de Sistemas e a professora Fernanda, que juntos trabalharam para criar um ambiente acessível para os alunos e que facilitasse a disponibilização dos materiais didáticos, agora todos em um lugar só. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nostrum incidunt reprehenderit facilis vel veniam similique temporibus illo provident? Explicabo eveniet architecto dolor fugiat aspernatur mollitia. Odit, aut? Architecto voluptates explicabo doloribus ab cumque atque quidem blanditiis, veniam, nihil cum velit consequatur dolores reprehenderit saepe odit eos? Et doloremque repellendus unde consequatur hic, ducimus qui iure deserunt veniam quibusdam consectetur nobis cupiditate? Sapiente esse itaque quo nihil a quaerat nostrum error reiciendis modi veritatis placeat possimus hic libero necessitatibus sed quia explicabo ipsum, voluptates facere maiores alias fugiat illo. Totam reiciendis cum natus repudiandae asperiores pariatur autem, quae provident deleniti!</p>
             </div>
         </div>
     </section>
 
     <!-- A importância do conhecimento científico e da biologia -->
+    <!-- Adicionar accordion com uma imagem de canto -->
     <section>
         <div class="container-fluid mt-1 mb-5">
             <div class="container justify-content-center align-items-center">
                 <h2 class="text-center mb-3">Qual a importância da Biologia?</h2>
-                <p class="lead">"Como o próprio nome indica, a Biologia estuda a vida. Seu estudo engloba desde organismos microscópicos até os maiores seres vivos do planeta, analisando-os nos diferentes níveis. Na Biologia, o estudo dos seres vivos realiza-se desde o nível molecular até as interações que ocorrem entre as diferentes espécies do planeta. <br>Ao aprofundarmo-nos nessa ciência, compreendemos melhor como é e como funciona o corpo dos seres vivos, incluindo o nosso, e também percebemos melhor como os seres vivos interagem uns com os outros e com o meio em que vivem. Somos capazes, ainda, de perceber como as mudanças surgiram ao longo do tempo, como elas favoreceram a sobrevivência das espécies e como os mecanismos evolutivos ainda atuam nos dias atuais. <br>O estudo da Biologia é extremamente importante, pois, ao compreendermos o funcionamento dos seres vivos, podemos entender, por exemplo, como evitar e prevenir doenças. Podemos também fazer previsões sobre o impacto do ser humano sobre as outras espécies do planeta e mesmo como sua ação impacta sua própria vida." *Esse textinho é do brasil escola e serve pra dar um panorama, podemos criar um texto autoral depois*</p>
+                <div class="row mt-4 mb-2 justify-content-center align-items-center">
+                    <div class="d-none d-xl-block col-lg-5 my-4 align-items-center justify-content-center">
+                        <img src="Mídias/ilustracao_bio.jpg" alt="Ilustração" class="img-fluid ms-5" style="height: 30vw; border-radius: 15px;">
+                    </div>
+                    <div class="col-12 col-lg-7 my-4 align-items-center">
+                        <!-- Accordion -->
+                        <div class="accordion" id="chapters">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">Biologia é importante</button>
+                                </h2>
+                                <div class="accordion-collapse collapse show" id="chapter-1" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ratione amet aperiam error inventore atque voluptate, repellat itaque numquam laboriosam non et libero consequatur, officiis quisquam nihil soluta! Quae, neque!</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis hic officiis quod dolor amet molestiae at iste tenetur excepturi ut. Labore tempore quas nihil, harum unde aperiam. Dolor, iure fuga.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">Ajuda a conhecer os bichos</button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="chapter-2" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ratione amet aperiam error inventore atque voluptate, repellat itaque numquam laboriosam non et libero consequatur, officiis quisquam nihil soluta! Quae, neque!</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis hic officiis quod dolor amet molestiae at iste tenetur excepturi ut. Labore tempore quas nihil, harum unde aperiam. Dolor, iure fuga.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">Nos ensina sobre plantas</button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="chapter-3" aria-labelledby="heading-3" data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ratione amet aperiam error inventore atque voluptate, repellat itaque numquam laboriosam non et libero consequatur, officiis quisquam nihil soluta! Quae, neque!</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis hic officiis quod dolor amet molestiae at iste tenetur excepturi ut. Labore tempore quas nihil, harum unde aperiam. Dolor, iure fuga.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="true" aria-controls="chapter-4">Sobre bebês também</button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="chapter-4" aria-labelledby="heading-4" data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ratione amet aperiam error inventore atque voluptate, repellat itaque numquam laboriosam non et libero consequatur, officiis quisquam nihil soluta! Quae, neque!</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis hic officiis quod dolor amet molestiae at iste tenetur excepturi ut. Labore tempore quas nihil, harum unde aperiam. Dolor, iure fuga.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="true" aria-controls="chapter-5">E sobre o Darwin</button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="chapter-5" aria-labelledby="heading-5" data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ratione amet aperiam error inventore atque voluptate, repellat itaque numquam laboriosam non et libero consequatur, officiis quisquam nihil soluta! Quae, neque!</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis hic officiis quod dolor amet molestiae at iste tenetur excepturi ut. Labore tempore quas nihil, harum unde aperiam. Dolor, iure fuga.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <p class="lead">"Como o próprio nome indica, a Biologia estuda a vida. Seu estudo engloba desde organismos microscópicos até os maiores seres vivos do planeta, analisando-os nos diferentes níveis. Na Biologia, o estudo dos seres vivos realiza-se desde o nível molecular até as interações que ocorrem entre as diferentes espécies do planeta. <br>Ao aprofundarmo-nos nessa ciência, compreendemos melhor como é e como funciona o corpo dos seres vivos, incluindo o nosso, e também percebemos melhor como os seres vivos interagem uns com os outros e com o meio em que vivem. Somos capazes, ainda, de perceber como as mudanças surgiram ao longo do tempo, como elas favoreceram a sobrevivência das espécies e como os mecanismos evolutivos ainda atuam nos dias atuais. <br>O estudo da Biologia é extremamente importante, pois, ao compreendermos o funcionamento dos seres vivos, podemos entender, por exemplo, como evitar e prevenir doenças. Podemos também fazer previsões sobre o impacto do ser humano sobre as outras espécies do planeta e mesmo como sua ação impacta sua própria vida." *Esse textinho é do brasil escola e serve pra dar um panorama, podemos criar um texto autoral depois*</p> -->
             </div>
         </div>
     </section>
@@ -106,44 +171,48 @@
                 <h2>Quem sou eu?</h2>
                 <p class="lead">Conheça um pouco da incrível professora responsável por compartilhar seu conhecimento com os alunos que tanto ama</p>
             </div>
-            <div class="row my-5 justify-content-center">
-                <div class="col-lg-4 my-3">
+            <div class="row my-5 justify-content-center align-items-center">
+                <div class="col-lg-4 my-3 ms-xxl-5 d-flex justify-content-center">
                     <!-- Carrossel -->
                     <div class="container">
-                        <div class="carousel slider carousel-fade" id="mainSlider" data-ride="carousel">
+                        <div class="carousel slider carousel-fade" id="mainSlider" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="FerCarousel" src="Mídias/Fer 1.png" alt="Fer 1">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <picture>
+                                        <source media="(max-width: 580px)" srcset="Mídias/Fer1-s.png" type="image/png" class="FerCarousel-s">
+                                        <source media="(max-width: 768px)" srcset="Mídias/Fer 1.png" type="image/png" class="FerCarousel-md">
+                                        <source media="(max-width: 1200px)" srcset="Mídias/Mídias/Fer 1.png" type="image/png" class="FerCarousel-lg"> 
+                                        <img class="FerCarousel-xl" src="Mídias/Fer 1.png" alt="Fer 1">
+                                    </picture>
+                                    
                                 </div>
-                                <div class="carousel-item">
-                                    <img class="FerCarousel" src="Mídias/Fer 2.png" alt="Fer 2">
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img class="FerCarousel-s" src="Mídias/Fer 2.png" alt="Fer 2">
                                 </div>
-                                <div class="carousel-item">
-                                    <img class="FerCarousel" src="Mídias/Fer 3.png" alt="Fer 3">
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img class="FerCarousel-s" src="Mídias/Fer 3.png" alt="Fer 3">
                                 </div> 
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
-                            </button>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
+                            </button> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 my-3">
-                    <p class="lead">Bacharel e licenciada em Ciências Biológicas pela UNICAMP. Experiência acadêmica na área de Fisiologia Vegetal, e também em Microbiologia do Solo. Especialista em Gestão Ambiental; mestra em Agricultura Tropical e Subtropical no Instituto Agronômico de Campinas (IAC) e doutora em Biologia Vegetal pela UNICAMP. Atualmente é docente na disciplina de Biologia no Ensino Médio e tem interesse nas áreas de ensino e pesquisa de Ciências e Biologia. </p>
+                <div class="col-lg-6 my-3 d-flex justify-content-center">
+                    <div class="container">
+                        <p class="lead">Bacharel e licenciada em Ciências Biológicas pela UNICAMP. Experiência acadêmica na área de Fisiologia Vegetal, e também em Microbiologia do Solo. Especialista em Gestão Ambiental; mestra em Agricultura Tropical e Subtropical no Instituto Agronômico de Campinas (IAC) e doutora em Biologia Vegetal pela UNICAMP. Atualmente é docente na disciplina de Biologia no Ensino Médio e tem interesse nas áreas de ensino e pesquisa de Ciências e Biologia. </p>
+                    </div>
                 </div>
             </div>
         </div>        
