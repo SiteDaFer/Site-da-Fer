@@ -82,12 +82,11 @@ p{
     width: 19.5vw;
     border-radius: 5px;
 }
-
+               
 .bi{
-    color: aliceblue;
     font-size: 20px;
 }
 
 .gapSobre{
-    gap: 30px;
+    gap: 25px;
 }
