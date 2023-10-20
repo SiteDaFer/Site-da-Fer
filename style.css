@@ -83,10 +83,16 @@ p{
     border-radius: 5px;
 }
                
-.bi{
+.gapSobre .bi{
     font-size: 20px;
+    color: aliceblue;
 }
 
 .gapSobre{
     gap: 25px;
+}
+
+.offcanvas a{
+    text-decoration: none;
+    color: black;
 }
