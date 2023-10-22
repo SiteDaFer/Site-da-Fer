@@ -6,11 +6,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Mídias/biologia.png" type="image/x-icon">
     <title>Home</title>
     <style>
+        @media (min-width: 576px) and (max-width: 992px){
+            .carousel{
+                margin-left: 16.5vw;
+            }
+        }
+
         .fer{
-            height: 23vw;
-            background-color: #22577a;
+            height: 500px;
+            width: 500px;
         }
     </style>
 </head>
@@ -23,20 +30,26 @@
     Tela de carregamento com o gif da meiose
     Carrossel com os dados da Fer *
     Accordions para exempllificar o site *
+
+
+    A fazer:
+    Sobre nós
+    Página de conteúdo
+    Organização dos seres vivos
     -->
 
     <!-- Início navbar -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" data-bs-theme="dark">
             <div class="container-fluid navBar">
-                <span class="navbar-brand">Navbar</span>
+                <span class="navbar-brand"><img src="Mídias/navbar-icon.png" alt="Biologia - Banner" class="navbarIcon"></span>
                 <button class="navbar-toggler d-md-none rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <span class="nav-link active navbarAccessed animacao" aria-current="page" style="color: #57cc99;">Início</span>
+                            <a href="#inicio" class="nav-link active navbarAccessed animacao" aria-current="page" style="color: #57cc99;">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link animacao" href="conteudos.html">Conteúdos</a>
@@ -50,7 +63,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item ">
                             <a href="#login-modal" class="nav-link animacao" data-bs-toggle="modal" data-bs-target="#login-modal">Entrar</a>
-                        </li>''
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -59,7 +72,7 @@
     <!-- Fim navbar -->
     
     <!-- Landing page -->
-    <section class="mt-5">
+    <section class="mt-5" id="inicio">
         <div class="container my-5">
             <div class="row justify-content-around align-items-center">
                 <div class="col-lg-5 text-center text-md-start">
@@ -68,8 +81,8 @@
                     <p class="lead">Descubra o aprendizado de forma criativa, interativa, recheado de conhecimento e informação e melhor ainda, tudo em um só lugar! <br> O que acha de entrar nesse mundo e se aventurar pelas maravilhas que englobam o mundo da Biologia?</p>
                     <a href="conteudos.html" class="btn bnt-lg">Vamos nessa!</a>
                 </div>
-                <div class="col-md-6 d-none d-lg-block">
-                    <div class="fer"></div>
+                <div class="col-md-6 d-none d-lg-block justify-content-end text-center">
+                    <img src="Mídias/Fer-landing.png" alt="Cientista" class="fer">
                 </div>
             </div>
         </div>
@@ -85,15 +98,14 @@
         </div>
     </section>
 
-    <!-- A importância do conhecimento científico e da biologia -->
-    <!-- Adicionar accordion com uma imagem de canto -->
+    <!-- A importância da biologia -->
     <section>
         <div class="container-fluid mt-1 mb-5">
             <div class="container justify-content-center align-items-center">
                 <h2 class="text-center mb-3">Qual a importância da Biologia?</h2>
                 <div class="row mt-4 mb-2 justify-content-center align-items-center">
                     <div class="d-none d-xl-block col-lg-5 my-4 align-items-center justify-content-center">
-                        <img src="Mídias/ilustracao_bio.jpg" alt="Ilustração" class="img-fluid ms-5" style="height: 30vw; border-radius: 15px;">
+                        <img src="Mídias/ilustracao_bio.jpg" alt="Ilustração" class="img-fluid ms-5" style="height: 400px; border-radius: 15px;">
                     </div>
                     <div class="col-12 col-lg-7 my-4 align-items-center">
                         <!-- Accordion -->
@@ -167,9 +179,9 @@
                 <p class="lead">Conheça um pouco da incrível professora responsável por compartilhar seu conhecimento com os alunos que tanto ama</p>
             </div>
             <div class="row my-5 justify-content-center align-items-center">
-                <div class="col-lg-4 my-3 ms-xxl-5 d-flex justify-content-center">
+                <div class="col-lg-4 my-3 ms-xxl-5 d-flex justify-content-center d-none d-sm-block">
                     <!-- Carrossel -->
-                    <div class="container">
+                    <div class="container text-center justify-content-center align-items-center">
                         <div class="carousel slider carousel-fade" id="mainSlider" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -177,35 +189,24 @@
                                 <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="3000">
-                                    <picture>
-                                        <source media="(max-width: 580px)" srcset="Mídias/Fer1-s.png" type="image/png" class="FerCarousel-s">
-                                        <source media="(max-width: 768px)" srcset="Mídias/Fer 1.png" type="image/png" class="FerCarousel-md">
-                                        <source media="(max-width: 1200px)" srcset="Mídias/Mídias/Fer 1.png" type="image/png" class="FerCarousel-lg"> 
-                                        <img class="FerCarousel-xl" src="Mídias/Fer 1.png" alt="Fer 1">
-                                    </picture>
-                                    
+                                <div class="carousel-item active" data-bs-interval="2500">
+                                    <img class="FerCarousel img-fluid" src="Mídias/Fer 1.png" alt="Fer 1">
                                 </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="FerCarousel-s" src="Mídias/Fer 2.png" alt="Fer 2">
+                                <div class="carousel-item" data-bs-interval="2500">
+                                    <img class="FerCarousel" src="Mídias/Fer 2.png" alt="Fer 2">
                                 </div>
-                                <div class="carousel-item" data-bs-interval="3000">
-                                    <img class="FerCarousel-s" src="Mídias/Fer 3.png" alt="Fer 3">
+                                <div class="carousel-item" data-bs-interval="2500">
+                                    <img class="FerCarousel" src="Mídias/Fer 3.png" alt="Fer 3">
                                 </div> 
                             </div>
-                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button> -->
                         </div>
                     </div>
                 </div>
+                <!-- <div class="fotoFer d-sm-none justify-content-center align-items-center">
+                    <img src="Mídias/Fer 1.png" alt="Fer 1" style="height: 200px;">
+                </div> -->
                 <div class="col-lg-6 my-3 d-flex justify-content-center">
-                    <div class="container">
+                    <div class="container text-center text-sm-start">
                         <p class="lead">Bacharel e licenciada em Ciências Biológicas pela UNICAMP. Experiência acadêmica na área de Fisiologia Vegetal, e também em Microbiologia do Solo. Especialista em Gestão Ambiental; mestra em Agricultura Tropical e Subtropical no Instituto Agronômico de Campinas (IAC) e doutora em Biologia Vegetal pela UNICAMP. Atualmente é docente na disciplina de Biologia no Ensino Médio e tem interesse nas áreas de ensino e pesquisa de Ciências e Biologia. </p>
                     </div>
                 </div>
@@ -221,112 +222,112 @@
             <p class="lead">Conheça a equipe por trás do desenvolvimento desse site.</p>
             <div class="container justify-content-center">
                 <div class="row gapSobre justify-content-around my-5">
-                    <div class="col-md-4 col-xl-2 my-3 text-center text-sm-start justify-content-center justify-sm-start">
+                    <div class="col-6 col-md-4 col-xl-2 my-3 text-center text-md-start justify-content-center justify-sm-start">
                         <div class="row">
-                            <div class="col-sm-4 col-xxl-3">
+                            <div class="col-sm-4 col-xxl-3 d-none d-md-block">
                                 <!--Fotinha-->
                                 <div style="background-color: aliceblue; border-radius: 100px; width: 50px; height: 50px;"></div>
                             </div>
-                            <div class="col-sm-8 col-xxl-9">
+                            <div class="col-md-8 col-xxl-9">
                                 Enzo Olivato Pazian <br><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWsmHZmjrXwvKRvzcpPtfflZKsDpMFprdQxzRVjnPGXTmLXbVLVxwpGKNvjScJRNpVljsbKqV" target="_blank"><i class="bi bi-envelope-fill"></i></a> <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xl-2 my-3 text-center text-sm-start justify-content-center justify-sm-start">
+                    <div class="col-6 col-md-4 col-xl-2 my-3 text-center text-md-start justify-content-center justify-sm-start">
                         <div class="row">
-                            <div class="col-sm-4 col-xxl-3">
+                            <div class="col-sm-4 col-xxl-3 d-none d-md-block">
                                 <!--Fotinha-->
                                 <div style="background-color: aliceblue; border-radius: 100px; width: 50px; height: 50px;"></div>
                             </div>
-                            <div class="col-sm-8 col-xxl-9">
+                            <div class="col-md-8 col-xxl-9">
                                 Vitor Henrique Silva Nascimento <br><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRzDsRRQSlXmfQwVSDgDTQVlssjPkdVrXLhxcWKvpvzNkKFSJNrmmHnzpPgjfXLTpmDfHvKg" target="_blank"><i class="bi bi-envelope-fill"></i></a> <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xl-2 my-3 text-center text-sm-start justify-content-center justify-sm-start">
+                    <div class="col-6 col-md-4 col-xl-2 my-3 text-center text-md-start justify-content-center justify-sm-start">
                         <div class="row">
-                            <div class="col-sm-4 col-xxl-3">
+                            <div class="col-sm-4 col-xxl-3 d-none d-md-block">
                                 <!--Fotinha-->
                                 <div style="background-color: aliceblue; border-radius: 100px; width: 50px; height: 50px;"></div>
                             </div>
-                            <div class="col-sm-8 col-xxl-9">
+                            <div class="col-md-8 col-xxl-9">
                                 Mariana Melo Pereira <br><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKkVWCxJPLqsbbWCsMCdZMXHcnnJWqzMZdXfxdPbqZtWLHPdTrVwvBSbLsnWbcqgBPJxMQX" target="_blank"><i class="bi bi-envelope-fill"></i></a> <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xl-2 my-3 text-center text-sm-start justify-content-center justify-sm-start">
+                    <div class="col-6 col-md-4 col-xl-2 my-3 text-center text-md-start justify-content-center justify-sm-start">
                         <div class="row">
-                            <div class="col-sm-4 col-xxl-3">
+                            <div class="col-sm-4 col-xxl-3 d-none d-md-block">
                                 <!--Fotinha-->
                                 <div style="background-color: aliceblue; border-radius: 100px; width: 50px; height: 50px;"></div>
                             </div>
-                            <div class="col-sm-8 col-xxl-9">
+                            <div class="col-md-8 col-xxl-9">
                                 Lorena Ferreira da SIlva <br><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqbzllvhbTCkkZPBPXfGBhBFzKtsDXSjJQFqXjwMmXwKxFnLcNrlzDXKmBfnRbSdTSPXpL" target="_blank"><i class="bi bi-envelope-fill"></i></a> <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xl-2 my-3 text-center text-sm-start justify-content-center justify-sm-start">
+                    <div class="col-6 col-md-4 col-xl-2 my-3 text-center text-md-start justify-content-center justify-sm-start">
                         <div class="row">
-                            <div class="col-sm-4 col-xxl-3">
+                            <div class="col-sm-4 col-xxl-3 d-none d-md-block">
                                 <!--Fotinha-->
                                 <div style="background-color: aliceblue; border-radius: 100px; width: 50px; height: 50px;"></div>
                             </div>
-                            <div class="col-sm-8 col-xxl-9">
+                            <div class="col-md-8 col-xxl-9">
                                 Heloise Kuhl de Oliveira <br><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJvpbpnSJbnxxvgljkkHchKZnprlxqHhtWSRvlFLVLrXBnrBcMrgPxwVLGgTTZdMPcsNtnq" target="_blank"><i class="bi bi-envelope-fill"></i></a> <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xl-2 my-3 text-center text-sm-start justify-content-center justify-sm-start">
+                    <div class="col-6 col-md-4 col-xl-2 my-3 text-center text-md-start justify-content-center justify-sm-start">
                         <div class="row">
-                            <div class="col-sm-4 col-xxl-3">
+                            <div class="col-sm-4 col-xxl-3 d-none d-md-block">
                                 <!--Fotinha-->
                                 <div style="background-color: aliceblue; border-radius: 100px; width: 50px; height: 50px;"></div>
                             </div>
-                            <div class="col-sm-8 col-xxl-9">
+                            <div class="col-md-8 col-xxl-9">
                                 Guilherme Nunes Alves <br><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRlRZSVRzWgDgVJNGBPwvlrQppcNZGRWGdDXmLNzdfVgmTBLzmXSNGDdlpSqdXclFBQglvv" target="_blank"><i class="bi bi-envelope-fill"></i></a> <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xl-2 my-3 text-center text-sm-start justify-content-center justify-sm-start">
+                    <div class="col-6 col-md-4 col-xl-2 my-3 text-center text-md-start justify-content-center justify-sm-start">
                         <div class="row">
-                            <div class="col-sm-4 col-xxl-3">
+                            <div class="col-sm-4 col-xxl-3 d-none d-md-block">
                                 <!--Fotinha-->
                                 <div style="background-color: aliceblue; border-radius: 100px; width: 50px; height: 50px;"></div>
                             </div>
-                            <div class="col-sm-8 col-xxl-9">
+                            <div class="col-md-8 col-xxl-9">
                                 João Pedro Maretti de Oliveira <br><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCDCMlBshCKZnrZzgDQSvvhZgMkwMnNVpsPBJrJLsWnQSSVpBVlxsWHWNnjngGMMVzbJtL" target="_blank"><i class="bi bi-envelope-fill"></i></a> <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xl-2 my-3 text-center text-sm-start justify-content-center justify-sm-start">
+                    <div class="col-6 col-md-4 col-xl-2 my-3 text-center text-md-start justify-content-center justify-sm-start">
                         <div class="row">
-                            <div class="col-sm-4 col-xxl-3">
+                            <div class="col-sm-4 col-xxl-3 d-none d-md-block">
                                 <!--Fotinha-->
                                 <div style="background-color: aliceblue; border-radius: 100px; width: 50px; height: 50px;"></div>
                             </div>
-                            <div class="col-sm-8 col-xxl-9">
+                            <div class="col-md-8 col-xxl-9">
                                 Arthur de Oliveira Nero <br><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCBBNJbKTwxKrwXPQDRBwVjmDtBgFMtwmcqzzTNlbLKpbWkDGvvdWQlwppwtXxGpJRQqdV" target="_blank"><i class="bi bi-envelope-fill"></i></a> <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xl-2 my-3 text-center text-sm-start justify-content-center justify-sm-start">
+                    <div class="col-6 col-md-4 col-xl-2 my-3 text-center text-md-start justify-content-center justify-sm-start">
                         <div class="row">
-                            <div class="col-sm-4 col-xxl-3">
+                            <div class="col-sm-4 col-xxl-3 d-none d-md-block">
                                 <!--Fotinha-->
                                 <div style="background-color: aliceblue; border-radius: 100px; width: 50px; height: 50px;"></div>
                             </div>
-                            <div class="col-sm-8 col-xxl-9">
+                            <div class="col-md-8 col-xxl-9">
                                 Daniela Mendonça <br><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXLDRgbNMVZdwGgPWJZlLLvCBwFTVJsThfcnmBRRBTPwwqNgrfZVHRHSLmrghbgVwNHQZ" target="_blank"><i class="bi bi-envelope-fill"></i></a> <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xl-2 my-3 text-center text-sm-start justify-content-center justify-sm-start">
+                    <div class="col-6 col-md-4 col-xl-2 my-3 text-center text-md-start justify-content-center justify-sm-start">
                         <div class="row">
-                            <div class="col-sm-4 col-xxl-3">
+                            <div class="col-sm-4 col-xxl-3 d-none d-md-block">
                                 <!--Fotinha-->
                                 <div style="background-color: aliceblue; border-radius: 100px; width: 50px; height: 50px;"></div>
                             </div>
-                            <div class="col-sm-8 col-xxl-9">
+                            <div class="col-md-8 col-xxl-9">
                                 Beatriz Aparecida Cardia <br><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRlRjBsWqZblzNgQlpbdHCxzWDVpvmVDgWVhJQlTrKvQxPfDvLdGwtDGzCkWbvdctTCltxb" target="_blank"><i class="bi bi-envelope-fill"></i></a> <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                             </div>
                         </div>

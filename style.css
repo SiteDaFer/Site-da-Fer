@@ -34,6 +34,10 @@ p{
     font-weight: bold;
 }
 
+.navbarIcon{
+    height: 50px;
+}
+
 .btn{
     background-color: #57cc99;
     border: #57cc99;
@@ -45,7 +49,9 @@ p{
 }
 
 .menu{
-    border-bottom: 0.8px solid black;
+    margin-top: 65px;
+    background-color: #22577a;
+    color: #d9d9d9;
 }
 
 .sidebarLink{
@@ -53,24 +59,22 @@ p{
     color: black;
 }
 
+.sidebarLink2{
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
 .carousel{
     width: 300px;
 }
 
-.FerCarousel-s{
+.FerCarousel{
     height: 300px;
 }
 
-.FerCarousel-md{
-    height: 400px;
-}
-
-.FerCarousel-lg{
-    height: 500px;
-}
-
-.FerCarousel-xl{
-    height: 300px;
+.FerCarousel-2{
+    height: 200px;
+    margin-left: -50px;
 }
 
 .sobreNos{
@@ -78,8 +82,8 @@ p{
 }
 
 .imgConteudo{
-    height: 19.5vw;
-    width: 19.5vw;
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
 }
                
@@ -95,4 +99,28 @@ p{
 .offcanvas a{
     text-decoration: none;
     color: black;
+}
+
+.menuItem{
+    color: #d9d9d9;
+}
+
+.conteudo{
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.divList{
+    border-style: dashed;
+    border-width: 1px;
+    border-color: black;
+    width: 80px;
+}
+
+.assunto{
+    margin-left: 30px;
+}
+
+.imgTopico{
+    height: 150px;
 }
